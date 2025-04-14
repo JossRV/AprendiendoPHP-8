@@ -35,20 +35,24 @@ curl_close($ch);
     <!-- aplicacion -->
     <main>
         <section>
-            <div class="grid mx-auto gap-5 text-center">
+            <div class="grid mx-auto gap-4 text-center my-20 text-violet-200">
                 <!-- <pre>
                         <?= var_dump($data); ?>
                     </pre> -->
-                <!-- <div class="grid mx-auto gap-5"> -->
-                <h2>La proxima pelicula de Marvel</h2>
-                <img class="mx-auto w-sm rounded-2" src="<?= $data['poster_url'] ?>"
+                <h2 class="text-5xl">La proxima pelicula de Marvel</h2>
+                <img class="mx-auto w-sm rounded-2xl" src="<?= $data['poster_url'] ?>"
                     alt="Poster de <?= $data['title'] ?>" />
-                <p><?= $data['title'] ?> se estrena en <?= $data['days_until'] ?> días</p>
-                <p class="card-text">Fecha de estreno <?= $data['release_date'] ?></p>
-                <p class="card-text">
-                    La siguiente pelicula es <?= $data['following_production']['title'] ?>
+                <p class="text-xl">
+                    <span class="font-extrabold"><?= $data['title'] ?></span> se estrena en
+                    <?= $data['days_until'] ?> días
                 </p>
-                <!-- </div> -->
+                <p class="text-xl">
+                    Fecha de estreno <?= $data['release_date'] ?>
+                </p>
+                <p class="text-xl">
+                    La siguiente pelicula es <span
+                        class="font-extrabold"><?= $data['following_production']['title'] ?></span>
+                </p>
             </div>
         </section>
     </main>
