@@ -40,7 +40,7 @@ curl_close($ch);
                         <?= var_dump($data); ?>
                     </pre> -->
                 <h2 class="text-5xl">La proxima pelicula de Marvel</h2>
-                <img class="mx-auto w-sm rounded-2xl" src="<?= $data['poster_url'] ?>"
+                <img class="mx-auto w-sm rounded-2xl drop-shadow-xl/50" src="<?= $data['poster_url'] ?>"
                     alt="Poster de <?= $data['title'] ?>" />
                 <p class="text-xl">
                     <span class="font-extrabold"><?= $data['title'] ?></span> se estrena en
