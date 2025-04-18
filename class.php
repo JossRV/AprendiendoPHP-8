@@ -20,7 +20,7 @@ class SuperHero
     // propiedades y los metodos
     // propiedades describir los datos, describir la visibilidad hacia los clientes
 
-    // variables publicas
+    // propiedades publicas (variables)
     // public $name;
     // public $power;
     // public $planet;
